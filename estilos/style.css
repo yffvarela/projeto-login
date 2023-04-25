@@ -2,8 +2,8 @@
 
 /*
     Paleta de cores
-    Amarelo: #F7D060
-    Rosa: #FF6D60
+    Rosa: #FFD3B0
+    Amarelo: #f6d365
 */
 
 * {
@@ -14,7 +14,39 @@
 }
 
 body, html {
-    background-color: #FF6D60; 
+    background-color: #f6d365; 
     height: 100vh;
     width: 100vh;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #675D50 ;
+}
+
+section#login > div#imagem {
+    background: #f6d365 url(../imagens/laranja.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+::selection#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
