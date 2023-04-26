@@ -34,14 +34,17 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #675D50 ;
+    box-shadow: 0px 0px 10px #675D50;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #f6d365 url(../imagens/laranja.jpg);
+    background: #f6d365 url(../imagens/laranja.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
